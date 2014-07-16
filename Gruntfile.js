@@ -76,6 +76,7 @@ module.exports = function(grunt) {
             expand: true,
             cwd: './build',
             src: [
+              'assets/**/*',
               '**/*'
             ],
             dest: './Cordova/www'
@@ -165,7 +166,7 @@ module.exports = function(grunt) {
     'less:production',
     'requirejs',
     'preprocess:prod',
-    'copy:build',
+    'copy:main',
     'gh-pages'
   ]);
 
